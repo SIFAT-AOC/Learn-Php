@@ -36,5 +36,14 @@ $movies = [
     $filteredByMovies = Array_filter($movies, function($movie){
         return $movie['year']  >= 1990 && $movie['year'] <=2017;
     });
+    $heading = "home";
+    function dd($value){
+        echo '<pre>';
+        var_dump($value);
+        echo '</pre>';
+    
+        die();
+    }
 
-    require "index.view.php";
+
+    require "views/index.view.php";
